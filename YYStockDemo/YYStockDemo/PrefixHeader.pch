@@ -1,0 +1,61 @@
+
+//
+//  PrefixHeader.pch
+//  YYStockDemo
+//
+//  Created by admin on 2017/6/23.
+//  Copyright © 2017年 yate1996. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "JSONModel.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+
+
+#import "BaseJSON.h"
+
+#define kQuotationDomainName @"http://hq.ailiangxiang.com/hq"
+
+/* 快照 */
+#define export_snap [NSString stringWithFormat:@"%@/show_hq_service/export_snap.json",kQuotationDomainName]
+
+/* 日K */
+#define export_day [NSString stringWithFormat:@"%@/show_hq_service/export_day.json",kQuotationDomainName]
+
+/* 周K */
+#define export_week [NSString stringWithFormat:@"%@/show_hq_service/export_week.json",kQuotationDomainName]
+
+/* 月K */
+#define export_month [NSString stringWithFormat:@"%@/show_hq_service/export_month.json",kQuotationDomainName]
+
+/** 分时 */
+#define export_min [NSString stringWithFormat:@"%@/show_hq_service/export_min.json",kQuotationDomainName]
+
+/** 股票基本面输出接口 */
+#define export_base [NSString stringWithFormat:@"%@/show_hq_service/export_base.json",kQuotationDomainName]
+
+
+CG_INLINE BOOL stringIsEmpty(NSString *string) {
+    if([string isKindOfClass:[NSNull class]]){
+        return YES;
+    }
+    if (string == nil) {
+        return YES;
+    }
+    if ([string isEqualToString:@"(null)"]) {
+        return YES;
+    }
+    NSString *text = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if ([text length] == 0) {
+        return YES;
+    }
+    return NO;
+}
+
+
+
+#endif /* PrefixHeader_pch */

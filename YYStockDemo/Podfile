@@ -1,0 +1,10 @@
+platform :ios,'8.0'
+use_frameworks!
+pod 'Masonry'
+pod 'MJExtension'
+pod 'JSONModel'
+pod 'AFNetworking'
+pod "FDStackView", "1.0"
+
+
+target 'YYStockDemo'
