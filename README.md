@@ -13,10 +13,6 @@ The version requires iOS 7.0+ and Xcode 7.0+
 YYStock is provided under the MIT license. See LICENSE file for details.
 
 ##介绍
-####相比第一版:
-####1.代码重新封装,数据源抽象,更方便集成
-####2.代码注释,逻辑清晰,低耦合
-####3.......
 
 长按分时图+五档图
 ![长按分时图+五档图](http://images2015.cnblogs.com/blog/784141/201610/784141-20161017233159888-557730348.png)
@@ -42,11 +38,3 @@ K线图
 
 非全屏嵌入
 ![非全屏嵌入](http://images2015.cnblogs.com/blog/784141/201610/784141-20161017233111295-969151974.png)
-
-
-咦,发现UI好看但是功能不够你用???
-
-没事,欲求不满的话专业版K线Demo也早早就准备好了♪(^∇^*) 
-这里这里:https://github.com/yate1996/Y_KLine
-
-###欢迎加群讨论更多：578874451
